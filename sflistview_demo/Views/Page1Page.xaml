@@ -21,22 +21,22 @@
                 <DataTemplate x:DataType="model:Item">
                     <Border Style="{StaticResource ListBorderStyle}">
                         <HorizontalStackLayout>
-                            <!-- Image --><!--
+                            <!-- Image -->
                             <Image Grid.Row="0"  
-                       Grid.Column="1" 
-                       HorizontalOptions="End" 
-                       Source="{Binding Image}"
-                       Margin="2"
-                       WidthRequest="20" 
-                       HeightRequest="20"
-                       VerticalOptions="Center"/>-->
+                                   Grid.Column="1" 
+                                   HorizontalOptions="End" 
+                                   Source="{Binding Image}"
+                                   Margin="2"
+                                   WidthRequest="20" 
+                                   HeightRequest="20"
+                                   VerticalOptions="Center"/>
                             <!-- Name -->
                             <Label Grid.Row="0" 
-                       Grid.Column="2" 
-                       Margin="4,8"
-                       VerticalTextAlignment="Center"
-                       Text="{Binding Name}"
-                       Style="{StaticResource SmallLabelStyle}"/>
+                                   Grid.Column="2" 
+                                   Margin="4,8"
+                                   VerticalTextAlignment="Center"
+                                   Text="{Binding Name}"
+                                   Style="{StaticResource SmallLabelStyle}"/>   
                         </HorizontalStackLayout>
                     </Border>
                 </DataTemplate>
