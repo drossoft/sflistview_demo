@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="sflistview_demo.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:views="clr-namespace:sflistview_demo.Views"
+	xmlns:local="clr-namespace:sflistview_demo">
+
+	<TabBar>
+		<ShellContent
+			Title="Page1"
+			Icon="iconblank.png"
+			ContentTemplate="{DataTemplate views:Page1Page}" />
+		<ShellContent
+			Title="Page2"
+			Icon="iconblank.png"
+			ContentTemplate="{DataTemplate views:Page2Page}" />
+	</TabBar>
+</Shell>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sflv="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+			 xmlns:vm="clr-namespace:sflistview_demo.ViewModels"
+             xmlns:model="clr-namespace:sflistview_demo.Model"
+			 x:Class="sflistview_demo.Views.Page1Page"
+			 x:DataType="vm:Page1ViewModel">
+
+    <Grid RowDefinitions="Auto,*"
+              Padding="0"
+              x:Name="MainGrid">
+        <Label Text="Testing"/>
+
+        <sflv:SfListView ItemsSource="{Binding Items}"
+                         Grid.Row="2"
+                         Margin="8"
+                         SelectionMode="None"
+                         AutoFitMode="Height">
+            <sflv:SfListView.ItemTemplate>
+                <DataTemplate x:DataType="model:Item">
+                    <Border Style="{StaticResource ListBorderStyle}">
+                        <HorizontalStackLayout>
+                            <!-- Image --><!--
+                            <Image Grid.Row="0"  
+                       Grid.Column="1" 
+                       HorizontalOptions="End" 
+                       Source="{Binding Image}"
+                       Margin="2"
+                       WidthRequest="20" 
+                       HeightRequest="20"
+                       VerticalOptions="Center"/>-->
+                            <!-- Name -->
+                            <Label Grid.Row="0" 
+                       Grid.Column="2" 
+                       Margin="4,8"
+                       VerticalTextAlignment="Center"
+                       Text="{Binding Name}"
+                       Style="{StaticResource SmallLabelStyle}"/>
+                        </HorizontalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </sflv:SfListView.ItemTemplate>
+        </sflv:SfListView>
+
+    </Grid>
+    
+</ContentPage>
